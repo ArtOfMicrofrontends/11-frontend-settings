@@ -1,8 +1,8 @@
 import Vue from 'vue';
 
-let SettingsPage = undefined;
-
 export function setup(api) {
+  let SettingsPage = undefined;
+
   api.registerPage("/settings", {
     bootstrap: () =>
       import("./Settings.vue").then((content) => {
